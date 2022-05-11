@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: rgba(195, 69, 225, .4);*/
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ), url('https://images.pexels.com/photos/4974914/pexels-photo-4974914.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-description {
+    width: 80%;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#description {
+    margin-block-end: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    width: 70%;
+    background: rgba(22, 4, 4, .8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name, #email, #number, #dropdown, #dropdown2 {
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+}
+
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+input[type=checkbox] {
+    width: 22px;
+    height: 22px;
+}
+
+#area {
+    width: 100%;
+    height: 90px;
+    border-radius: 4px;
+}
+
+#submit {
+    width: 90%;
+    height: 35px;
+    border-radius: 4px;
+    margin-block-start: 15px;
+    margin-block-end: 30px;
+    background: #37af65;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.name, .email, .number, .dropdown, .dropdown2, .recommend, .apply, .area {
+    width: 90%;
+}
+
+#survey-form p {
+    padding-block-start: 30px;
+    padding-block-end: 15px;
+}
+
+.recommend, .apply, .area {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommend label, .apply label {
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.recommend label input, .apply label input {
+    margin-inline-end: 10px;
+}
+
+.area {
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 60%;
+    }
+    .recommend label, .apply label {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: 50%;
+    }
+}
